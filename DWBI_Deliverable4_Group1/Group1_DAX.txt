@@ -1,0 +1,38 @@
+1. Basic Aggregation (Total Trade Value)
+Total Trade Value = SUM('Fact Trades'[trade_value_usd])
+
+2. Basic Aggregation (Total Trades)
+Total Trades = COUNTROWS('Fact Trades')
+
+
+3. KPI / Ratio (Avg Trade Value per User)
+Total Unique Users = DISTINCTCOUNT('User Info'[user_id])       (Helper Measure)
+Avg Trade Value per User = DIVIDE([Total Trade Value], [Total Unique Users])
+
+
+4. KPI / Ratio (Avg Daily Price Change %)
+Avg Daily Price Change % = AVERAGEX( 'Fact Crypto Prices', 'Fact Crypto Prices'[price_change_pct] )
+
+
+5. Time Intelligence (Year-over-Year Trade Growth)
+YoY Trade Value % = DIVIDE([Total Trade Value] - CALCULATE([Total Trade Value], DATEADD('Date'[full_date], -1, YEAR)),
+                           CALCULATE([Total Trade Value], DATEADD('Date'[full_date], -1, YEAR)))
+
+
+6. Conditional Metric (Top Trading Region)
+Top Trading Region = MAXX(VALUES(Region[country]), [Total Trade Value])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
