@@ -1,0 +1,10 @@
+RegionKey,Country,Continent,TimeZone
+1,Pakistan,Asia,UTC+5
+2,India,Asia,UTC+5:30
+3,Singapore,Asia,UTC+8
+4,Malaysia,Asia,UTC+8
+5,China,Asia,UTC+8
+6,Japan,Asia,UTC+9
+7,USA,North America,UTC-5
+8,UAE,Asia,UTC+4
+9,Hong Kong,Asia,UTC+8

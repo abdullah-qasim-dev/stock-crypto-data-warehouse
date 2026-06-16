@@ -1,0 +1,6 @@
+stock_id,symbol,company_name,sector,ipo_year,shares_outstanding,marketcap
+1,AAPL,Apple Inc.,Technology,1980,16000000000,2.8E+12
+2,AMZN,Amazon.com Inc.,E-Commerce,1997,10100000000,1.7E+12
+3,GOOGL,Alphabet Inc.,Technology,2004,12700000000,2.2E+12
+4,MSFT,Microsoft Corp.,Technology,1986,7450000000,3.1E+12
+5,NVDA,NVIDIA Corp.,Semiconductors,1999,2460000000,1.4E+12
